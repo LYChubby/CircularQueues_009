@@ -37,4 +37,13 @@ public:
 		}
 		queue_array[REAR] = num;
 	}
+
+	void remove() {
+		// Cek Apakah Antrian Kosong
+		if (FRONT == -1) {
+			cout << "Queue Underflow\n";
+			return;
+		}
+		cout << "\nThe Element Deleted From Queue Is : " << queue_array[FRONT] << endl;
+	}
 };
