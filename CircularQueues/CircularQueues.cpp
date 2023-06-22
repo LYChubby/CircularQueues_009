@@ -88,6 +88,13 @@ public:
 			}
 
 			FRONT_position = 0;
+
+			// Iterasi Dari Awal Array Hinga REAR
+			while (FRONT_position <= REAR_position) {
+				cout << queue_array[FRONT_position] << "  ";
+				FRONT_position++;
+			}
+			cout << endl;
 		}
 	}
 };
