@@ -44,6 +44,19 @@ public:
 			cout << "Queue Underflow\n";
 			return;
 		}
-		cout << "\nThe Element Deleted From Queue Is : " << queue_array[FRONT] << endl;
+		cout << "\nThe Element Deleted From Queue Is : " << queue_array[FRONT] << "\n";
+
+		// Cek Jika Antrian Hanya Memiliki Satu Element
+		if (FRONT = REAR) {
+			FRONT = -1;
+			REAR = -1;
+		}
+		else {
+			// Jika Elemen Yang Dihapus Berada Diposisi Terakhir Array, Kembali Ke Awal Array
+			if (FRONT == max - 1)
+				FRONT = 0;
+			else
+				FRONT = FRONT + 1;
+		}
 	}
 };
